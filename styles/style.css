@@ -1,1 +1,55 @@
-/* место для вашего кода */
+header {
+  display: flex;
+  margin: 92px 24px 96px 24px;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.header_logo {
+  position: absolute;
+  margin-left: 476px;
+  margin-right: 476px;
+  width: 148px;
+  height: 105px;
+  
+}
+
+.menu {
+  width: 391px;
+  margin: 44px auto 39px 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: circle;
+  
+}
+
+.menu li {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.menu li:first-child {
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.contacts {
+  margin: 5px 25px 2px auto;
+  line-height: 24px;
+  text-underline-offset: 4px;
+  list-style: none;
+}
+.contacts li {
+text-decoration: none;
+}
