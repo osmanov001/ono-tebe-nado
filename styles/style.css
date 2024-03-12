@@ -1,55 +1,485 @@
+
+
 header {
-  display: flex;
-  margin: 92px 24px 96px 24px;
-  flex-direction: row;
-  justify-content: space-between;
-  
-}
-
-.header_logo {
-  position: absolute;
-  margin-left: 476px;
-  margin-right: 476px;
-  width: 148px;
+  width: 1052px;
   height: 105px;
-  
-}
-
-.menu {
-  width: 391px;
-  margin: 44px auto 39px 26px;
   display: flex;
+  margin: 92px 25px 96px 25px;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  list-style: circle;
-  
+  position: relative;
 }
 
-.menu li {
+.header__menu {
+  width: 391px;
+  height: 22px;
+  margin: 46px 36px 39px 22px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.header__menu li {
   font-family: Raleway;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-decoration: underline;
   text-underline-offset: 4px;
+  list-style: circle;
+  list-style-type: circle;
+  margin-left: 3px;
+  white-space: nowrap;
 }
 
-.menu li:first-child {
+.header__menu li:first-child {
   list-style: none;
   text-decoration: none;
 }
 
-.menu a {
+.header__menu a {
   text-decoration: none;
+}
+
+.header__logo {
+  display: flex;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 450px;
+  width: 148px;
+  height: 105px;
 }
 
 .contacts {
-  margin: 5px 25px 2px auto;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.25px;
+  width: 241px;
+  height: 98px;
+  margin: 8px 28px 2px;
   line-height: 24px;
-  text-underline-offset: 4px;
   list-style: none;
+  text-underline-offset: 4px;
 }
+
+
+.address {
+  font-style: normal;
+}
+
 .contacts li {
-text-decoration: none;
+  text-decoration: none;
 }
+
+
+
+             /* ниже первая секция */
+
+.cover {
+  position: relative;
+  margin-top: 96px;
+  width: 1100px;
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.overlay {
+  width:100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__block {
+  width: 1000px;
+  height: 355px;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  color: white;
+  letter-spacing: 30px;
+}
+
+.aligned-text {
+  position: absolute;
+  width: 316px;
+  height: 100px;
+  top: 165px;
+  left: 50px;
+  letter-spacing: 30px;
+}
+
+.aligned-text_center {
+  position: absolute;
+  width: 369px;
+  height: 100px;
+  top: 295px;
+  right: 395px;
+}
+
+.aligned-text_right {
+  position: absolute;
+  width: 417px;
+  height: 100px;
+  right: 50px;
+  top: 415px;
+}
+
+
+.letter__space {
+  letter-spacing: 60px;
+}
+
+.cover__description {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.cover__description-text {
+  font-size: 22px;
+  margin-left: 78px;
+  margin-top: 315px;
+  line-height: 28px;
+  color: #FFFFFF;
+  width: 637px;
+  height: 28px;
+  white-space: nowrap;
+  word-spacing: 18.50px;
+}
+
+.bet-button {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 22px;
+  margin-left: 78px;
+  margin-top: 303px;
+  border: 1px solid white;
+  width: 256px;
+  height: 51px;
+  background-color: transparent;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             /* секция с карточками  */
+.lots  {
+  width: 1052px;
+  height: 692px;
+  margin-left: 24px;
+}
+
+.lots__title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 180px 915px 30px 40px;
+  width: 121px;
+  height: 47px;
+  text-transform: uppercase;
+}
+
+.lots__cards {
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  width: 334px;
+  height: 563px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  width: 334px;
+  height: 563px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  width: 334px;
+  height: 563px;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.lots__card {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.card__title {
+  position: absolute;
+  font-size: 22px;
+  top: 0;
+  text-decoration: underline;
+  color: #FFFFFF;
+  width: 254px;
+  margin: 51px 40px 431px 40px;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-transform: uppercase;
+}
+
+
+.card__text_one {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  margin: 370px 40px 50px 40px;
+  width: 254px;
+  height: 144px;
+  text-align: left;
+}
+
+
+.card__text_two {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin: 155px 40px 50px 40px;
+  width: 254px;
+  height: 360px;
+  text-align: left;
+}
+
+.card__text_three {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin: 250px 40px 50px 40px;
+  width: 254px;
+  height: 264px;
+  text-align: left;
+}
+
+.lots__look-more-link {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  height: 23px;
+  width: 192px;
+  margin-top: 29px;
+  margin-left: 40px;
+  text-underline-offset: 4px; 
+}
+  
+
+
+
+
+
+             /* ниже секция с информацией об аукционе */
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  grid-template-rows: auto 1fr;
+  color: #000000;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 146px;
+  width: 1052px;
+  height: 595px;
+  margin-bottom: 180px;
+  
+}
+
+.about__blocks {
+  display: flex;
+}
+
+.about__logo {
+  display: flex;
+  min-height: 240px;
+  min-width: 240px;
+  height: 240px;
+  width: 240px;
+  background-color:  #000000;
+  border-radius: 50%;
+  margin-left: 47px;
+  margin-right: 72px;
+  margin-top: 35px;
+}
+
+
+.about__logo-image {
+  height: 114px;
+  width: 148px;
+  margin-top: 65px;
+  margin-left: 47px;
+  object-fit: contain;
+}
+
+.about__column {
+  font-family: Raleway;
+  font-weight: 400;
+  width: 693px;
+  height: 449px;
+}
+
+.about__title {
+  font-family:Raleway ;
+  font-weight: 700;
+  font-size: 40px;
+  align-self: center;
+  text-transform: uppercase;
+  width: 291px;
+  height: 47px;
+  margin-top: 136px;
+  margin-bottom: 102px;
+}
+
+
+.about__text_one {
+  font-size:  20px;
+  width: 688px;
+  height: 120px;
+  margin-bottom: 24px;
+  line-height: 24px;
+}
+
+
+.about__text_two {
+  font-size:  20px;
+  width: 693px;
+  height: 168px;
+  text-align: start;
+  
+}
+
+
+
+
+
+
+            /* ниже подвал */
+
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 98px;
+  justify-content: space-between;
+  align-items: start;
+  margin: 180px auto 88px;
+}
+.footer__contacts {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  Width: 240px;
+  list-style: none;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  font-style: normal;
+}
+
+.footer__menu {
+  width: 149px;
+  height: 64px;
+  list-style: none;
+  margin-left: 186px;
+  margin-top: 4px;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+.footer__menu li {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.footer__menu li:first-child {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer__menu a {
+  text-decoration: none;
+}
+
+.footer__social {
+  display: flex;
+  gap: 48px;
+  margin-left: auto;
+}
+
+.youtube {
+  margin-top: 3px;
+  width: 48px;
+  height: 48px;
+  border: 1px;
+  color: #000000;
+  
+}
+
+.vk {
+  margin-top: 3px;
+  width: 48px;
+  height: 48px;
+  border: 1px;
+  color: #000000;
+}
+
+.Pinterest {
+  margin-top: 3px;
+  width: 48px;
+  height: 48px;
+  border: 1px;
+  color: #000000;
+}
+
+
+
+
+
