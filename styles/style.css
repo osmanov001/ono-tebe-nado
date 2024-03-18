@@ -42,7 +42,6 @@
 .address {
   display: block;
   max-width: 237px;
-  min-height: 100px;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -57,7 +56,7 @@
 .cover {
   font-family: Raleway, Arial, sans-serif;
   position: relative;
-  width: 1100px;
+  /* width: 1100px; */
   min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
@@ -72,6 +71,11 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
+.cover__block {
+  position: relative;
+  z-index: 1;
+  min-height: 757px;
+}
 
 .cover__title {
   display: flex;
@@ -86,11 +90,11 @@
   text-transform: uppercase;
 }
 
-.cover__block {
-  position: absolute;
-  z-index: 1;
-}
 
+
+.aligned-text {
+  letter-spacing: 30px;
+}
 
 .no_letter-space {
   letter-spacing: normal;
@@ -98,47 +102,49 @@
 
 
 .aligned-text_center {
-  margin-left: 288px;
+  text-align: center;
+  letter-spacing: 30px;
 }
 
 
 .aligned-text_right {
-  margin-left: 586px;
+  letter-spacing: 30px;
 }
 
 
 .letter__space {
+  text-align: right;
   letter-spacing: 60px;
 }
 
 
 .cover__description {
   display: flex;
-  flex-direction: row;
-  position: absolute; 
+  margin-top: 84px;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
 }
 
-
 .cover__description-text {
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 400;
   font-size: 22px;
-  margin-left: 78px;
-  margin-top: 668px;
+  margin-left: 28px;
+  text-align: center;
   line-height: 28px;
-  width: 637px;
-  height: 28px;
   white-space: nowrap;
   word-spacing: 18.50px;
   text-transform: uppercase;
   color: white;
-  
 }
 
 
   button {
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 500;
   font-size: 22px;
-  margin-left: 78px;
-  margin-top: 657px;
+  /* margin-left: 78px; */
   border: 1px solid white;
   width: 256px;
   height: 51px;
@@ -151,10 +157,8 @@
 
 
 .lots  {
-
-  width: 1052px;
+  /* width: 1052px; */
   margin-left: 24px;
-  
 }
 
 
@@ -171,7 +175,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+
   position: relative;
   padding: 50px 40px;
   background-size: cover;
@@ -186,9 +190,8 @@
 .lots__card-list {
   display: flex;
   gap: 24px;
-  flex-direction: row;
   list-style: none;
-  
+  flex-wrap: wrap;
 }
 
 .card__type_film {
@@ -210,7 +213,8 @@
 }
 
 .lots__card-list-item {
-  width: 430px;
+  display: block;
+  width: 334px;
   min-height: 450px;
 }
 
@@ -237,9 +241,9 @@
   width: 192px;
   margin-top: 29px;
   margin-left: 40px;
-  text-underline-offset: 4px; 
+  text-underline-offset: 4px;
 }
-  
+
 
              /* ниже секция с информацией об аукционе */
 
@@ -249,7 +253,6 @@
   grid-template-rows: auto 1fr;
   color: #000000;
   width: 1052px;
-  min-height: 595px;
   margin: 146px 24px 180px;
 }
 
@@ -320,7 +323,7 @@
   flex-direction: row;
   width: 1000px;
   margin-left: 52px;
-  margin-bottom: 90px; 
+  margin-bottom: 90px;
   justify-content: space-between;
 }
 
